@@ -1,0 +1,112 @@
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+ 
+/* ===========================
+   TABLET (768px and below)
+   =========================== */
+@media (max-width: 768px) {
+ 
+    /* Header - stack on mobile */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+ 
+    header h1 {
+        font-size: 1.5rem;
+    }
+ 
+    nav {
+        justify-content: center;
+        gap: var(--space-xs);
+    }
+ 
+    nav a {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+ 
+    /* Hero - smaller text */
+    .hero h2 {
+        font-size: 2rem;
+    }
+ 
+    .hero p {
+        font-size: 1rem;
+    }
+ 
+    .hero {
+        padding: var(--space-lg) var(--space-md);
+        min-height: 300px;
+    }
+ 
+    /* Featured books - tighter grid */
+    .featured h2 {
+        font-size: 2rem;
+    }
+ 
+    /* Filters - stack on mobile */
+    .filter-controls {
+        flex-direction: column;
+    }
+ 
+    /* Cart table - hide some columns on mobile */
+    .cart-table thead {
+        display: none;
+    }
+ 
+    .cart-table tbody tr {
+        display: block;
+        margin-bottom: var(--space-md);
+        background: var(--white);
+        padding: var(--space-md);
+        border-radius: var(--border-radius);
+    }
+ 
+    .cart-table td {
+        display: block;
+        text-align: left;
+        padding: var(--space-xs) 0;
+    }
+}
+ 
+/* ===========================
+   MOBILE (480px and below)
+   =========================== */
+@media (max-width: 480px) {
+ 
+    /* Even tighter on phones */
+    header h1 {
+        font-size: 1.25rem;
+    }
+ 
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+ 
+    .book-card img {
+        height: 180px;
+    }
+ 
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+ 
+/* ===========================
+   LARGE DESKTOPS (1400px+)
+   =========================== */
+@media (min-width: 1400px) {
+ 
+    .hero h2 {
+        font-size: 4rem;
+    }
+ 
+    .featured h2,
+    .categories h2 {
+        font-size: 3rem;
+    }
+}

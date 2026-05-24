@@ -1,0 +1,139 @@
+CSS
+.page-header {
+    background: linear-gradient(135deg, #5B3A29 0%, #8B5E3C 100%);
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+}
+ 
+.page-header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+}
+ 
+/*search nd filter*/
+.filters {
+    background: var(--white);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-lg);
+}
+ 
+.search-box {
+    display: flex;
+    gap: var(--space-sm);
+    max-width: 600px;
+    margin: 0 auto var(--space-md);
+}
+ 
+.search-box input {
+    flex: 1;
+    padding: var(--space-sm);
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+ 
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+ 
+.search-box button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+ 
+.filter-controls {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.filter-controls select {
+    padding: var(--space-sm);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+ 
+/* ===========================
+   THE GRID - The Star of This Phase
+   =========================== */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-md);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+ 
+.book-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: all 0.3s;
+}
+ 
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+ 
+.book-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
+}
+ 
+.book-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-xs);
+}
+ 
+.book-card .author {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+ 
+.book-card .rating {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+ 
+.book-card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+ 
+.book-card button {
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: var(--space-sm);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+ 
+.book-card button:hover {
+    background: var(--accent);
+    color: var(--primary);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BookHive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+ 
+    <!-- Same header as home page -->
+    <header>
+        <h1>📚 BookHive</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (0)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+ 
+    <main>
+        <section class="form-section">
+            <h2>Welcome Back!</h2>
+            <p>Login to your BookHive account</p>
+ 
+            <form action="#" method="POST" class="login-form">
+ 
+                <!-- Email field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+ 
+                <!-- Password field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+ 
+                <!-- Remember me checkbox -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+ 
+                <!-- Submit button -->
+                <button type="submit" class="btn-primary">Login</button>
+ 
+                <!-- Forgot password link -->
+                <p class="form-link">
+                    <a href="#">Forgot password?</a>
+                </p>
+ 
+                <!-- Link to signup -->
+                <p class="form-link">
+                    Don't have an account?
+                    <a href="signup.html">Sign up here</a>
+                </p>
+            </form>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 BookHive. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books - BookHive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+ 
+    <header>
+        <h1>📚 BookHive</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (0)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+ 
+    <main>
+ 
+        <!-- PAGE TITLE -->
+        <section class="page-header">
+            <h2>All Books</h2>
+            <p>Browse our complete collection of 2,000+ books</p>
+        </section>
+ 
+        <!-- SEARCH AND FILTERS -->
+        <section class="filters">
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search books, authors, or genres..."
+                >
+                <button type="button">Search</button>
+            </div>
+ 
+            <div class="filter-controls">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="education">Education</option>
+                    <option value="biography">Biographies</option>
+                    <option value="business">Business</option>
+                </select>
+ 
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="default">Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+        </section>
+ 
+        <!-- POPULAR CATEGORIES (using unordered list) -->
+        <section class="categories-quick">
+            <h3>Popular Categories</h3>
+            <ul class="category-list">
+                <li><a href="#fiction">Fiction</a></li>
+                <li><a href="#nonfiction">Non-Fiction</a></li>
+                <li><a href="#biography">Biographies</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#children">Children</a></li>
+                <li><a href="#comics">Comics</a></li>
+            </ul>
+        </section>
+ 
+        <!-- BOOKS GRID -->
+        <section class="books-grid" id="books-container">
+ 
+            <article class="book-card">
+                <img src="images/books/wings-of-fire.jpg" alt="Wings of Fire" loading="lazy">
+                <h3>Wings of Fire</h3>
+                <p class="author">A.P.J. Abdul Kalam</p>
+                <p class="rating">⭐ 4.8 (2,341 reviews)</p>
+                <p class="price">₹299</p>
+                <button class="add-to-cart" data-id="1">Add to Cart</button>
+            </article>
+ 
+            <article class="book-card">
+                <img src="images/books/the-alchemist.jpg" alt="The Alchemist" loading="lazy">
+                <h3>The Alchemist</h3>
+                <p class="author">Paulo Coelho</p>
+                <p class="rating">⭐ 4.7 (5,012 reviews)</p>
+                <p class="price">₹349</p>
+                <button class="add-to-cart" data-id="2">Add to Cart</button>
+            </article>
+ 
+            <article class="book-card">
+                <img src="images/books/atomic-habits.jpg" alt="Atomic Habits" loading="lazy">
+                <h3>Atomic Habits</h3>
+                <p class="author">James Clear</p>
+                <p class="rating">⭐ 4.9 (8,420 reviews)</p>
+                <p class="price">₹499</p>
+                <button class="add-to-cart" data-id="3">Add to Cart</button>
+            </article>
+ 
+            <!-- Add 9-12 more book cards following the same pattern -->
+ 
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 BookHive. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>
