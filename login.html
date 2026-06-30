@@ -18,7 +18,7 @@
             <a href="books.html">Books</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="cart.html">🛒 Cart (0)</a>
+            <a href="cart.html" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
@@ -42,17 +42,19 @@
                     >
                 </div>
  
-                <!-- Password field -->
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Enter your password"
-                        minlength="6"
-                        required
-                    >
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            minlength="6"
+                            required
+                        >
+                        <button type="button" id="toggle-password" class="toggle-btn">👁️</button>
+                    </div>
                 </div>
  
                 <!-- Remember me checkbox -->
@@ -82,5 +84,9 @@
         <p>&copy; 2026 BookHive. All rights reserved.</p>
     </footer>
  
+    <script src="js/books.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

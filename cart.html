@@ -17,7 +17,7 @@
             <a href="books.html">Books</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="cart.html">🛒 Cart (3)</a>
+            <a href="cart.html" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
@@ -87,16 +87,16 @@
                 <h3>Order Summary</h3>
                 <dl>
                     <dt>Subtotal:</dt>
-                    <dd>₹997</dd>
- 
+                    <dd id="summary-subtotal">₹0</dd>
+
                     <dt>Shipping:</dt>
                     <dd>FREE</dd>
- 
+
                     <dt>Tax (5% GST):</dt>
-                    <dd>₹49.85</dd>
- 
-                    <dt><strong>Grand Total:</strong></dt>
-                    <dd><strong>₹1,046.85</strong></dd>
+                    <dd id="summary-tax">₹0</dd>
+
+                    <dt class="grand-total"><strong>Grand Total:</strong></dt>
+                    <dd id="summary-total" class="grand-total"><strong>₹0</strong></dd>
                 </dl>
  
                 <a href="#" class="btn-primary">Proceed to Checkout</a>
@@ -109,5 +109,9 @@
         <p>&copy; 2026 BookHive. All rights reserved.</p>
     </footer>
  
+    <script src="js/books.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart-page.js"></script>
 </body>
 </html>
